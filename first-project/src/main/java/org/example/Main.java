@@ -28,6 +28,21 @@ public class Main {
 
         System.out.println(baby1.olderThan18());
         System.out.println(human.getAge());
-
+        int first=10;
+        int second=20;
+        int third=32;
+        int fourth=29;
+        if(first>=second && first>=third && first>=fourth){
+            System.out.prinln(first);
+        }
+        else if(second>=third && second>=fourth) {
+            System.out.prinln(second);
+        }
+        else if (third>=fourth) {
+            System.out.println(third);
+        }
+        else{
+            System.out.println(fourth);
+        }
     }
 }
