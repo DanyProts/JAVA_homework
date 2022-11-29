@@ -1,33 +1,31 @@
-package org.example;
+package code;
+
+import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-        int a = -1;
-        int b = 2;
-        double d = 2.2;
-        float f = 2.2f;
-        String s = "just-string";
-        boolean l = true;
-//        System.out.println(a + b);
+        try (Scanner input = new Scanner(System.in)) {
+            int a;
+            int b;
+            int c;
+            int max;
+            System.out.println("Iput A");
+            a = input.nextInt();
+            System.out.println("Iput B");
+            b = input.nextInt();
+            System.out.println("Iput C");
+            c = input.nextInt();
 
-//        if (a > 0) {
-//            System.out.println(a);
-//        }else{
-//            System.out.println("a<=0");
-//        }
-//        int i = 0;
-//        while(i < 10){
-//            System.out.println(i);
-//            i++;
-//        }
+            max = a;
+            if (b > max) {
+                max = b;
+            }
+            if (c > max) {
+                max = c;
+            }
 
-        Human human = new Human(30, 180);
-        Human human1 = new Human(29, 179);
-        Human baby1 = new Human(55);
-
-
-        System.out.println(baby1.olderThan18());
-        System.out.println(human.getAge());
-
+            System.out.println("Max = " + max);
+        }
     }
 }
