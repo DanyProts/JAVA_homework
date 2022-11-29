@@ -1,33 +1,21 @@
 package org.example;
 
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int a = -1;
-        int b = 2;
-        double d = 2.2;
-        float f = 2.2f;
-        String s = "just-string";
-        boolean l = true;
-//        System.out.println(a + b);
 
-//        if (a > 0) {
-//            System.out.println(a);
-//        }else{
-//            System.out.println("a<=0");
-//        }
-//        int i = 0;
-//        while(i < 10){
-//            System.out.println(i);
-//            i++;
-//        }
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите четрыре целых числа:");
+        int numbers[], max =0;
+        numbers = new int[4];
 
-        Human human = new Human(30, 180);
-        Human human1 = new Human(29, 179);
-        Human baby1 = new Human(55);
+        for (int i=0; i<4; i++){
+            numbers[i] = in.nextInt();
+            if (i == 0) max = numbers[i];
+            if (max < numbers[i]) max = numbers[i];
+        }
 
-
-        System.out.println(baby1.olderThan18());
-        System.out.println(human.getAge());
-
+        System.out.println("Максимальное число:");
+        System.out.println(max);
     }
 }
