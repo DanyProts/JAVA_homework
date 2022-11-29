@@ -2,32 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int a = -1;
-        int b = 2;
-        double d = 2.2;
-        float f = 2.2f;
-        String s = "just-string";
-        boolean l = true;
-//        System.out.println(a + b);
-
-//        if (a > 0) {
-//            System.out.println(a);
-//        }else{
-//            System.out.println("a<=0");
-//        }
-//        int i = 0;
-//        while(i < 10){
-//            System.out.println(i);
-//            i++;
-//        }
-
-        Human human = new Human(30, 180);
-        Human human1 = new Human(29, 179);
-        Human baby1 = new Human(55);
-
-
-        System.out.println(baby1.olderThan18());
-        System.out.println(human.getAge());
-
+        int x1 = 4, x2 = 3, x3 = 2, x4 = 1;
+        int m1 = Math.max(x1, x2), m2 = Math.max(x3, x4);
+        int m = Math.max(m1, m2);
+        System.out.println(m);
     }
 }
