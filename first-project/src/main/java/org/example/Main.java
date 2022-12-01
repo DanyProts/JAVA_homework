@@ -1,33 +1,22 @@
 package org.example;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Main {
     public static void main(String[] args) {
-        int a = -1;
-        int b = 2;
-        double d = 2.2;
-        float f = 2.2f;
-        String s = "just-string";
-        boolean l = true;
-//        System.out.println(a + b);
+        int a1 = 72;
+        int a2 = -19;
+        int a3 = 21;
+        int a4 = 17;
+        ArrayList arr = new ArrayList<Integer>();
+        arr.add(a1);
+        arr.add(a2);
+        arr.add(a3);
+        arr.add(a4);
+        int maximum = (int) Collections.max(arr);
 
-//        if (a > 0) {
-//            System.out.println(a);
-//        }else{
-//            System.out.println("a<=0");
-//        }
-//        int i = 0;
-//        while(i < 10){
-//            System.out.println(i);
-//            i++;
-//        }
-
-        Human human = new Human(30, 180);
-        Human human1 = new Human(29, 179);
-        Human baby1 = new Human(55);
-
-
-        System.out.println(baby1.olderThan18());
-        System.out.println(human.getAge());
-
+        System.out.println(maximum);
     }
 }
