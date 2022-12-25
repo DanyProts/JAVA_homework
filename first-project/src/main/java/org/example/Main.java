@@ -1,33 +1,26 @@
-package org.example;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        int a = -1;
-        int b = 2;
-        double d = 2.2;
-        float f = 2.2f;
-        String s = "just-string";
-        boolean l = true;
-//        System.out.println(a + b);
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        int size = 4;
+        int array[] = new int[size];
+        System.out.println("Введите 4 числа: ");
+        for (int i = 0; i < size; i++) {
+            array[i] = input.nextInt();
+        }
+        System.out.println();
 
-//        if (a > 0) {
-//            System.out.println(a);
-//        }else{
-//            System.out.println("a<=0");
-//        }
-//        int i = 0;
-//        while(i < 10){
-//            System.out.println(i);
-//            i++;
-//        }
+        int max = getMax(array);
+        System.out.println("Максимальное значение: "+max);
+    }
 
-        Human human = new Human(30, 180);
-        Human human1 = new Human(29, 179);
-        Human baby1 = new Human(55);
-
-
-        System.out.println(baby1.olderThan18());
-        System.out.println(human.getAge());
-
+    public static int getMax(int[] inputArray){
+        int maxValue = inputArray[0];
+        for(int i=1;i < inputArray.length;i++){ if(inputArray[i] > maxValue){
+            maxValue = inputArray[i];
+        }
+        }
+        return maxValue;
     }
 }
