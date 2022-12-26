@@ -28,6 +28,12 @@ public class Main {
 
         System.out.println(baby1.olderThan18());
         System.out.println(human.getAge());
+        ArrayList list = new ArrayList<>();
+        list.add(41);
+        list.add(60);
+        list.add(15);
+        list.add(20);
+        System.out.println(Collections.max(list));
 
     }
 }
