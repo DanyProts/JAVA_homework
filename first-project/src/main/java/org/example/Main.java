@@ -1,5 +1,5 @@
 package org.example;
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int a = -1;
@@ -28,6 +28,13 @@ public class Main {
 
         System.out.println(baby1.olderThan18());
         System.out.println(human.getAge());
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();
+        System.out.println(Math.max(Math.max(a, b), Math.max(c, d)));
+
 
     }
 }
