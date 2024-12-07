@@ -1,7 +1,19 @@
 import java.util.Scanner;
 
 
+
+
+
 public class Main {
+    public  static  int Max(int ... args){
+        int max = args[0];
+        for (int i: args) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        return max;
+    }
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -10,8 +22,7 @@ public class Main {
         int b = in.nextInt();
         int c = in.nextInt();
         int d = in.nextInt();
-        int max = Math.max(Math.max(a, b), Math.max(c, d));
-        System.out.println(max);
+        System.out.println(Max(a, b, c, d));
     }
 }
 
