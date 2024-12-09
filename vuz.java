@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MaxOfFour {
+public class vuz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
