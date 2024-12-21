@@ -1,7 +1,25 @@
 package org.example;
+import java.util.ArrayList;
 
 public class Main {
+
+    public static void maximum(int first, int second, int third, int fourth) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(first);
+        numbers.add(second);
+        numbers.add(third);
+        numbers.add(fourth);
+        int max = first;
+        for (Integer number : numbers) {
+            if (number > max) max = number;
+        }
+        System.out.println(max);
+    }
+
     public static void main(String[] args) {
+
+        maximum(1,2,-3,10);
+
         int a = -1;
         int b = 2;
         double d = 2.2;
